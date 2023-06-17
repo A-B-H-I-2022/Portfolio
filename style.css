@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    background: #f5f5f5;
+    color: #030303;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding :20px 0% 20px 75%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .5s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #187bd1;
+}
+
+.home {
+    height: 100vh;
+    background: url('IMG_20220123_093044.jpg"');
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.pic {
+    /*align-self: right;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;*/
+    width: 300px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+.homecontent {
+    max-width: 700px;
+}
+
+.homecontent p{
+    margin: 20px 0 20px;
+}
+
+.homecontent h1{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.homecontent h2{
+    color: #9747fe;
+}
+
+.homecontent .btn-box{
+    display: flex;
+    width: 345px;
+    height: 50px;
+    
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    width: 250px;
+    height:100%;
+    background: #f7f5fa;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 1;
+
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #9747fe;
+    border-radius: 8px;
+    transition: .5s;
+    z-index: -1;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.pics {
+    position: absolute;
+    bottom: 220px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pics a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.pics a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+}
+
+.pics a:hover::before{
+    width: 100%;
+}
